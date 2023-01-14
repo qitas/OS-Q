@@ -7,12 +7,11 @@
 软件优先原则的 [qio](https://github.com/OS-Q/qio)是以[应用领域](https://github.com/OS-Q/applications)作为选择基础，在软件方案基础上延伸形态和功能差异，同时实现兼容，更高效满足于需求侧。
 
 
-
-|  | [pio](https://github.com/OS-Q/pio) | [qio](https://github.com/OS-Q/qio) |
+| 递进 | [pio](https://github.com/OS-Q/pio) | [qio](https://github.com/OS-Q/qio) |
 | ----- | ---------- | ---------- |
-| Q-1 | [platforms](https://github.com/OS-Q/platforms) | [applications](https://github.com/OS-Q/applications) |
+| Q-1 | [chips](https://github.com/OS-Q/chips) | [applications](https://github.com/OS-Q/applications) |
 | Q-2 | [boards](https://github.com/OS-Q/boards) | [libraries](https://github.com/OS-Q/libraries)  |
-| Q-3 | [frameworks](https://docs.platformio.org/en/latest/frameworks)  | [boards](https://github.com/OS-Q/boards) |
-| Q-4 | [libraries](https://github.com/OS-Q/libraries) | [chips](https://doc.soc.xin/) |
+| Q-3 | [frameworks](https://github.com/OS-Q/frameworks) | [boards](https://github.com/OS-Q/boards) |
+| Q-4 | [libraries](https://github.com/OS-Q/libraries) | [chips](https://github.com/OS-Q/chips) |
 
 * 在资源递进中前级会限定后级的范围
