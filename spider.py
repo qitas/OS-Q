@@ -34,7 +34,7 @@ def scrape(language, filename):
     url = 'https://github.com/trending/{language}'.format(language=language)
     r = requests.get(url, headers=HEADERS)
     assert r.status_code == 200
-    
+
     d = pq(r.content)
     items = d('div.Box article.Box-row')
 
@@ -62,9 +62,9 @@ def job():
     createMarkdown(strdate, filename)
 
     # write markdown
+    scrape('c', filename)
+    scrape('lua', filename)
     scrape('python', filename)
-    scrape('swift', filename)
-    scrape('javascript', filename)
     scrape('go', filename)
 
     # git add commit push
