@@ -27,9 +27,9 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run Spider
+      working-directory: trending
       run: |
         python spider.py
-        mv 2023-*.md  trending/
 
     # Runs a set of commands using the runners shell
     - name: push to origin master
