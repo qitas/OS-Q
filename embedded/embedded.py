@@ -40,7 +40,7 @@ def scrape(language, filename):
 
     # codecs to solve the problem utf-8 codec like chinese
     with codecs.open(filename, "a", "utf-8") as f:
-        f.write('\n#### {language}\n'.format(language=language))
+        f.write('\n### {language}\n\n'.format(language=language))
 
         for item in items:
             i = pq(item)
@@ -62,9 +62,9 @@ def job():
     createMarkdown(strdate, filename)
 
     # write markdown
+    # scrape('daily', filename)
     scrape('C', filename)
-    scrape('C++', filename)
-    scrape('CMake', filename)
+    # scrape('C++', filename)
     scrape('Makefile', filename)
 
     # git add commit push
